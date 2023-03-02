@@ -1,0 +1,87 @@
+input:invalid {
+    border: 2px solid red;
+}
+
+body {
+    background-image: url(card.jpeg);
+    background-repeat: no-repeat;
+}
+
+#titulo {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    margin-left: 700px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(232, 80, 255, 0.6);
+    min-width: 300px;
+    font-style: italic;
+    font-size: 40px;
+}
+
+#informacionDeTarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    background-color: rgb(232, 80, 255, 0.6);
+    margin-left: 700px;
+    margin-right: 200px;
+    font-size: 50px;
+    min-width: 300px;
+    font-style: inherit;
+    padding-bottom: 10%;
+    padding-top: 4%;
+    
+}
+
+#numero-tarjeta {
+    width: 270px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fecha-vencimiento {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#codigo-verificacion {
+    width: 60px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#validar-tarjeta {
+    font-size: 50px;
+    background-color: #008090;
+    border-radius: 6px;
+    font-style: inherit;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color:white;
+}
+
+#ocultarNumeros {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 230px;
+    margin-left: 900px;
+    margin-right: 500px;
+    background-color: rgb(232, 80, 255, 0.6);
+    min-width: 400px;
+
+}
+
+#resultado {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    margin-left: 480px;
+    background-color: rgb(232, 80, 255, 0.6);
+}
+
+

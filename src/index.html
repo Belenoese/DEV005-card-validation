@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="utf-8" />
+    <title>Validador de Tarjetas de Crédito</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Validador de Tarjetas de Crédito</h1>
-    <input type="text" id="credit-card-number" placeholder="Ingresa el número de tarjeta" maxlength="16">
-    <button id="validate-button">Validar</button>
-    <p id="result"></p>
-    </div>
-    <script src="index.js" type="module"></script>
+    <header>
+      <div id="titulo">
+        <h1>Válida tu tarjeta aquí</h1>
+      </div>
+    </header>
+
+    <main>
+      <div id="informacionDeTarjeta">
+        <form>
+          <label for="Numero-tarjeta">Número de tarjeta</label>
+          <br />
+          <input type="text" id="numero-tarjeta" name="Numero-tarjeta" required pattern="[0-9]+" maxlength="16" value=""/>
+          <br />
+          <label for="fecha-vencimiento">Fecha de vencimiento</label>
+          <br />
+          <input type="date" id="fecha-vencimiento" name="fecha-vencimiento" required=""/>
+          <br />
+          <label for="codigo-verificacion">cvv</label>
+          <br />
+          <input type="text" id="codigo-verificacion" name="codigo-verificacion" required pattern="[0-9]+" maxlength="3"/>
+          <br />
+          <button type="button" id="validar-tarjeta">Validar</button>
+        </form>
+      </div>
+
+      <p id="ocultarNumeros"></p>
+      <p id="resultado"></p>
+    </main>
+
+    <footer>
+      <script src="index.js" type="module"></script>
+    </footer>
   </body>
 </html>
